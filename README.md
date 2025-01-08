@@ -34,15 +34,18 @@ yarn add react-native-cskeleton
 To use `react-native-cskeleton`, wrap your components with `CSkeleton.Root` and use `CSkeleton.Element` to create skeleton placeholders. Here's a basic example:
 
 ```javascript
-import React from 'react';
-import { View, Text } from 'react-native';
-import CSkeleton from 'react-native-cskeleton';
+import React from "react";
+import { View, Text } from "react-native";
+import CSkeleton from "react-native-cskeleton";
 
 const App = () => {
   return (
     <CSkeleton.Root isLoading={true}>
       <CSkeleton.Element>
-        <View style={{ width: 100, height: 100, backgroundColor: '#ccc' }} />
+        <View style={{ width: 100, height: 100, backgroundColor: "#ccc" }} />
+      </CSkeleton.Element>
+      <CSkeleton.Element>
+        <Text>Hello</Text>
       </CSkeleton.Element>
     </CSkeleton.Root>
   );
@@ -51,22 +54,15 @@ const App = () => {
 export default App;
 ```
 
-By default, `CSkeleton.Element` will create the skeleton loading with the exact style of the children. And if you want to customize the CSkeleton.Element, you can add style prop to `CSkeleton.Element`. Here's a basic example:
+In this example:
+
+- `CSkeleton.Root` controls the skeleton loading state with the isLoading.
+- `CSkeleton.Element` creates a skeleton placeholder for the child component.
+
+You can customize the skeleton's appearance by passing a style prop to CSkeleton.Element. For example:
 
 ```javascript
-import React from 'react';
-import { View, Text } from 'react-native';
-import CSkeleton from 'react-native-cskeleton';
-
-const App = () => {
-  return (
-    <CSkeleton.Root isLoading={true}>
-      <CSkeleton.Element style={{width: 200, height: 200}}>
-        <View style={{ width: 100, height: 100, backgroundColor: '#ccc' }} />
-      </CSkeleton.Element>
-    </CSkeleton.Root>
-  );
-};
-
-export default App;
+<CSkeleton.Element style={{ borderRadius: 10, backgroundColor: "#e0e0e0" }}>
+  <View style={{ width: 200, height: 100 }} />
+</CSkeleton.Element>
 ```
