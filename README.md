@@ -21,7 +21,10 @@ Install the package using npm or yarn:
 
 ```bash
 npm install react-native-cskeleton
+```
 
 or
 
+```bash
 yarn add react-native-cskeleton
+```
