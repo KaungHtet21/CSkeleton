@@ -14,7 +14,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/KaungHtet21/CSkeleton.git"
   },
   "description": "A customizable skeleton loading component for React Native.",
   "peerDependencies": {
