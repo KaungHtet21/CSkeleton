@@ -28,3 +28,25 @@ or
 ```bash
 yarn add react-native-cskeleton
 ```
+
+## Usage
+
+To use `react-native-cskeleton`, wrap your components with `CSkeleton.Root` and use `CSkeleton.Element` to create skeleton placeholders. Here's a basic example:
+
+```javascript
+import React from 'react';
+import { View, Text } from 'react-native';
+import CSkeleton from 'react-native-cskeleton';
+
+const App = () => {
+  return (
+    <CSkeleton.Root isLoading={true}>
+      <CSkeleton.Element>
+        <View style={{ width: 100, height: 100, backgroundColor: '#ccc' }} />
+      </CSkeleton.Element>
+    </CSkeleton.Root>
+  );
+};
+
+export default App;
+```
