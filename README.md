@@ -2,7 +2,7 @@
 
 A customizable and lightweight skeleton loading component for React Native. Perfect for displaying placeholder content while data is being loaded. Enhance your app's user experience with smooth, animated skeleton screens.
 
-![Demo](https://media.giphy.com/media/your-demo-gif-url.gif) <!-- Add a demo GIF if possible -->
+![Demo](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3VhazB3bDMyYWpmazlmY3F6NWR5cWw0ZjFndDdianp5eWRoaGg4aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/om8qATl2vYp35WetwF/giphy.gif) <!-- Add a demo GIF if possible -->
 
 ---
 
@@ -102,3 +102,11 @@ The skeleton placeholder component.
   </CSkeleton.Element>
 </CSkeleton.Root>
 ```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Support
+
+If you find this package useful, please consider giving it a ⭐️ on GitHub. Your support is greatly appreciated!
