@@ -1,0 +1,28 @@
+{
+  "name": "react-native-cskeleton",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "skeleton",
+    "loading"
+  ],
+  "author": "Kaung Htet Kyaw",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "description": "A customizable skeleton loading component for React Native.",
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0 || ^18.3.1",
+    "react-native": "^0.64.0 || ^0.65.0 || ^0.66.0 || ^0.76.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-native": "^0.72.8"
+  }
+}
