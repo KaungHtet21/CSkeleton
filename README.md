@@ -50,3 +50,23 @@ const App = () => {
 
 export default App;
 ```
+
+By default, `CSkeleton.Element` will create the skeleton loading with the exact style of the children. And if you want to customize the CSkeleton.Element, you can add style prop to `CSkeleton.Element`. Here's a basic example:
+
+```javascript
+import React from 'react';
+import { View, Text } from 'react-native';
+import CSkeleton from 'react-native-cskeleton';
+
+const App = () => {
+  return (
+    <CSkeleton.Root isLoading={true}>
+      <CSkeleton.Element style={{width: 200, height: 200}}>
+        <View style={{ width: 100, height: 100, backgroundColor: '#ccc' }} />
+      </CSkeleton.Element>
+    </CSkeleton.Root>
+  );
+};
+
+export default App;
+```
