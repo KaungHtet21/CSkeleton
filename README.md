@@ -66,3 +66,39 @@ You can customize the skeleton's appearance by passing a style prop to CSkeleton
   <View style={{ width: 200, height: 100 }} />
 </CSkeleton.Element>
 ```
+
+## API Documentation
+
+`CSkeleton.Root`
+
+The root component that controls the skeleton loading state.
+
+| Prop             | Type        | Optional | Default | Description                                                          |
+| ---------------- | ----------- | -------- | ------- | -------------------------------------------------------------------- |
+| `isLoading`      | `boolean`   | `false`  | `false` | Whether the skeleton loading is active.                              |
+| `children`       | `ReactNode` | `false`  | `null`  | The child component to be rendered.                                  |
+| `hasData`        | `boolean`   | `true`   | `false` | Whether the data is available.                                       |
+| `emptyComponent` | `ReactNode` | `true`   | `null`  | Component to render when no data is available.                       |
+| `emptyText`      | `String`    | `true`   | `null`  | Text to render when no data is available and emptyComponent is null. |
+
+`CSkeleton.Element`
+
+The skeleton placeholder component.
+
+| Prop       | Type           | Optional | Default | Description                             |
+| ---------- | -------------- | -------- | ------- | --------------------------------------- |
+| `children` | `ReactElement` | `false`  | `null`  | The child component to be skeletonized. |
+| `style`    | `ViewStyle`    | `true`   | `null`  | Custom styles for the skeleton.         |
+
+## Example
+
+```javascript
+<CSkeleton.Root isLoading={false} hasData={true} emptyText={'No data'} emptyComponent={<YourEmptyComponent />}>
+  <CSkeleton.Element>
+    <View style={{ width: 100, height: 100, backgroundColor: "#ccc" }} />
+  </CSkeleton.Element>
+  <CSkeleton.Element>
+    <Text>Hello</Text>
+  </CSkeleton.Element>
+</CSkeleton.Root>
+```

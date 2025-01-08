@@ -19,8 +19,8 @@ import React, {
 const CSkeletonContext = createContext<boolean>(false);
 
 interface CSkeletonRootProps {
-  isLoading: boolean;
-  hasData?: boolean;
+  isLoading: boolean | false;
+  hasData?: boolean | false;
   emptyText?: string;
   emptyComponent?: ReactNode;
   children: ReactNode;
